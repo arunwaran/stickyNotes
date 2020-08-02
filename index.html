@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+  </head>
+  <body onload="onStartUp()">
+
+    <p>Note id: </p><p id="noteID"></p>
+  
+    <div class="container" id="divContainer">
+      
+      <div class="header" id="divHeader">
+        <a id="add" onclick="addNewNote(1)"> add</a>
+        <a id="delete" onclick="deleteNote()">delete</a>
+      </div>
+
+      <div class="content" id="divContent">
+        <textarea id="textAreaId" onkeyup="updateNote()"></textarea>
+      </div>
+
+    </div>
+  </body>
+</html>

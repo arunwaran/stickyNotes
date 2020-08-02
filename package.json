@@ -1,0 +1,14 @@
+{
+  "name": "stickynotes",
+  "version": "1.0.0",
+  "description": "sticky notes for desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "arun",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  }
+}
