@@ -14,14 +14,14 @@
   <body onload="onStartUp()">
     
     <div class="idInfo" style="-webkit-app-region: drag">
-      <span><span>Note Id: </span><span id="noteID"></span></span>
+      <span id="spanNoteId"><span>Note Id: </span><span id="noteID"></span></span>
     </div>
 
     <div class="container" id="divContainer">
 
       <div class="header" id="divHeader">
-        <a id="add" onclick="addNewNote(1)"> add</a>
-        <a id="delete" onclick="deleteNote()">delete</a>
+        <a id="add" onclick="addNewNote(1)"><img src="icons/plus.svg" width="20" height="20"/></a>
+        <a id="delete" onclick="deleteNote()"><img src="icons/cancel.svg" width="20" height="20"/> </a>
       </div>
 
       <div class="content" id="divContent">

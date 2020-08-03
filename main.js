@@ -1,6 +1,5 @@
 const { app, BrowserWindow } = require('electron');
 const onClose = require('./index.js')
-const nativeImage = require('electron').nativeImage
 
 function createWindow () {
   // Create the browser window.
