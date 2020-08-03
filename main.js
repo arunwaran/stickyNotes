@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const onClose = require('./index.js')
+const nativeImage = require('electron').nativeImage
 
 function createWindow () {
   // Create the browser window.
@@ -8,6 +9,7 @@ function createWindow () {
     // height: 200,
     width: 800,
     height: 600,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }

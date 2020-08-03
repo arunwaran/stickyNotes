@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 
@@ -11,11 +12,13 @@
 
   </head>
   <body onload="onStartUp()">
+    
+    <div class="idInfo" style="-webkit-app-region: drag">
+      <span><span>Note Id: </span><span id="noteID"></span></span>
+    </div>
 
-    <p>Note id: </p><p id="noteID"></p>
-  
     <div class="container" id="divContainer">
-      
+
       <div class="header" id="divHeader">
         <a id="add" onclick="addNewNote(1)"> add</a>
         <a id="delete" onclick="deleteNote()">delete</a>

@@ -114,6 +114,7 @@ function addNextNote(xPosition,yPosition,windowWidth,windowHeight){
     var newWindow = new remote.BrowserWindow({x:xPosition, y:yPosition, 
         width:windowWidth, 
         height:windowHeight,
+        frame: false,
         webPreferences:{
             nodeIntegration:true
         }
